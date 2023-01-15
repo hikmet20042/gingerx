@@ -4,8 +4,19 @@ import { FaFacebookF } from 'react-icons/fa'
 import { BsLinkedin, BsInstagram, BsTwitter, BsYoutube } from 'react-icons/bs'
 import { GiHamburgerMenu } from 'react-icons/gi'
 function App() {
-    function handleClick(e) {
-        console.log(e.target)
+    const handleClick = (e) => {
+        const navigations_list = document.querySelectorAll('.navigations')[0]
+        const heading = document.querySelector('.welcome')
+        if (
+            navigations_list.style.display == '' ||
+            navigations_list.style.display == 'none'
+        ) {
+            navigations_list.style.display = 'block'
+            heading.style.display = 'none'
+        } else {
+            navigations_list.style.display = 'none'
+            heading.style.display = 'block'
+        }
     }
     return (
         <div>
@@ -15,8 +26,7 @@ function App() {
                         <Link id='logo' to='/' />
                     </div>
 
-                    <div class='nav-menu-icon' onClick={(e) => handleClick(e)}>
-                        {console.log(<GiHamburgerMenu />)}
+                    <div class='nav-menu-icon' onClick={() => handleClick()}>
                         <GiHamburgerMenu />
                     </div>
 
@@ -153,39 +163,19 @@ function App() {
                         <Link to='/' />
                     </div>
                     <div className='social-media'>
-                        <a
-                            href='https://www.facebook.com'
-                            target='_blank'
-                            rel='noreferrer'
-                        >
+                        <a href='https://www.facebook.com' target='_blank'>
                             <FaFacebookF />
                         </a>
-                        <a
-                            href='https://www.linkedin.com'
-                            target='_blank'
-                            rel='noreferrer'
-                        >
+                        <a href='https://www.linkedin.com' target='_blank'>
                             <BsLinkedin />
                         </a>
-                        <a
-                            href='https://www.instagram.com'
-                            target='_blank'
-                            rel='noreferrer'
-                        >
+                        <a href='https://www.instagram.com' target='_blank'>
                             <BsInstagram />
                         </a>
-                        <a
-                            href='https://www.twitter.com'
-                            target='_blank'
-                            rel='noreferrer'
-                        >
+                        <a href='https://www.twitter.com' target='_blank'>
                             <BsTwitter />
                         </a>
-                        <a
-                            href='https://www.youtube.com'
-                            target='_blank'
-                            rel='noreferrer'
-                        >
+                        <a href='https://www.youtube.com' target='_blank'>
                             <BsYoutube />
                         </a>
                     </div>
