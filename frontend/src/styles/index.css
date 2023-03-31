@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+
+header {
+  height: 80vh;
+  background-size: cover;
+  background-position: 10px -165px;
+  background-image: url("../../public/image/5fc3e79b67ddf371886098.jpg");
+
+  position: relative;
+}
+
+#logo {
+  background-image: url("../../public/image/Logo2.png");
+  background-size: cover;
+  height: 125px;
+  width: 260px;
+
+  padding: 20px 20px;
+  display: block;
+}
+
+.navbar {
+  display: flex;
+  background-size: cover;
+  background-position: 10px 0;
+
+  background-image: url("../../public/image/5fc3e79b67ddf371886098.jpg");
+
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 22px;
+}
+.navbar .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .logo {
+  margin-right: auto;
+  margin-left: 15px;
+}
+.navbar .navigations {
+  display: flex;
+}
+.navbar .navigation a.nav-item {
+  min-width: 120px;
+  padding: 9px 30px;
+
+  transition: all 200ms;
+  text-align: center;
+}
+.navbar .nav-menu-icon {
+  display: none;
+}
+.navbar .navigation a.nav-item:hover {
+  background-color: rgba(219, 224, 148, 0.8);
+  color: black;
+  border-radius: 7px;
+}
+.navbar div a svg {
+  margin-left: 7px;
+}
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-height: 70%;
+  font-size: 60px;
+  color: aliceblue;
+  padding: 150px 280px 0;
+}
+
+main h3 {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Yeseva One", Arial, sans-serif;
+}
+main p {
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+section {
+  padding-top: 30px;
+}
+.discover {
+  background-image: url("../../public/image/pattern4.jpg");
+  padding-bottom: 20px;
+}
+.discover h4 {
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.discover .cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.discover .cards .card-item {
+  height: 300px;
+  width: 300px;
+  border: 1px solid #928f8f;
+  border-radius: 10px;
+  transition: all 200ms;
+}
+.discover .cards .card-item:hover {
+  box-shadow: 10px 10px 50px;
+}
+.discover .cards .card-item img {
+  height: 230px;
+  width: 300px;
+  border-radius: 7px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-bottom: 20px;
+}
+.discover .cards .card-item h5 {
+  font-size: 32px;
+  text-align: center;
+  color: black;
+}
+.weekly-deals {
+  background-image: url("../../public/image/pattern2.jpg");
+  color: white;
+}
+.weekly-deals h5,
+.weekly-deals p {
+  margin-top: 20px;
+}
+
+.weekly-deals .image-tab {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.weekly-deals .image-tab img {
+  height: 200px;
+  width: 200px;
+  margin-right: 20px;
+}
+.weekly-deals .short-menu {
+  text-align: center;
+  font-size: 32px;
+  max-height: 600px;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.weekly-deals h3 {
+  padding-top: 20px;
+}
+.weekly-deals .short-menu .menu-content {
+  margin: 20px 150px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  font-family: Graduate, Arial, Helvetica, sans-serif;
+  flex-wrap: wrap;
+}
+
+.weekly-deals .short-menu .menu-content .menu-item h5 {
+  font-size: 24px;
+  text-align: start;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 3px solid white;
+  border-style: dashed;
+  padding-bottom: 10px;
+}
+.weekly-deals .short-menu .menu-content .menu-item p {
+  font-size: 18px;
+  text-align: start;
+  color: #918f8f;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+}
+.weekly-deals .short-menu a {
+  text-transform: uppercase;
+  color: white;
+  padding: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 7px;
+  transition: all 200ms;
+}
+.weekly-deals .short-menu a:hover {
+  background-color: #918f8f;
+  color: #272626;
+}
+footer .subcription {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-image: url("../../public/image/pattern3.jpg");
+}
+footer .subcription h3 {
+  font-size: 30px;
+  padding: 20px 0;
+  font-weight: 500;
+}
+footer .subcription input {
+  width: 250px;
+  height: 40px;
+  padding-left: 10px;
+  border: 3px solid rgb(69, 80, 68);
+  transition: all 200ms;
+}
+
+footer .subcription a {
+  padding: 11px 15px;
+  background-color: rgb(69, 80, 68);
+  transition: all 200ms;
+}
+footer .subcription a:hover {
+  background-color: #4d4a4a;
+}
+footer .subcription input:hover {
+  border: 3px solid #696565;
+}
+footer .contact {
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../public/image/pattern5.jpg");
+}
+footer .contact .logo {
+  height: 150px;
+  width: 300px;
+  background-image: url("../../public/image/Logo2.png");
+  background-size: cover;
+  margin: 20px auto 0;
+}
+footer .contact .logo a {
+  height: 150px;
+  width: 300px;
+  display: inline-block;
+}
+footer .social-media {
+  margin-top: 50px;
+}
+footer .social-media a {
+  display: inline-block;
+  color: rgb(177, 167, 167);
+  font-size: 32px;
+  margin-right: 20px;
+  transition: all 200ms;
+}
+footer .social-media a:hover {
+  color: white;
+}
+@media (max-width: 1031px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .navigations {
+    display: none;
+  }
+  .logo {
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar .nav-menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 60px;
+    font-size: 48px;
+    cursor: pointer;
+  }
+  .navigation {
+    text-align: center;
+    font-size: 32px;
+    padding: 10px 0;
+    margin: 0 60px;
+    background-color: rgba(236, 131, 71, 0.486);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .welcome {
+    font-size: 40px;
+    padding: 0 100px;
+    margin-top: 90px;
+  }
+  .weekly-deals .short-menu .menu-content {
+    display: block;
+    margin: 20px 15px 0;
+  }
+  .weekly-deals .short-menu {
+    max-height: 1200px;
+  }
+  footer .subcription {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
+
+.login-page {
+  background-position: 10px -165px;
+  background-image: url("../../public/image/5fc3e79b67ddf371886098.jpg");
+  background-size: cover;
+  height: calc(80vh - 35px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+}
+
+.login-page .login-page__form {
+  height: 470px;
+  width: 400px;
+  background-color: rgb(217, 188, 151);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-page .login-page__form h1 {
+  font-size: 48px;
+  margin: 30px 0;
+}
+
+.login-page .login-page__form form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.login-page .login-page__form form input {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 5px;
+  border-radius: 7px;
+  transition: all 200ms;
+}
+.login-page .login-page__form form label {
+  padding: 3px 0;
+  font-size: 1.5rem;
+}
+
+.login-page .login-page__form a {
+  transition: all 200ms;
+  color: #393737;
+  font-size: 14px;
+}
+
+.login-page .login-page__form a:hover {
+  color: #1d1c1c;
+}
+
+.login-page .login-page__form form input:hover {
+  background-color: black;
+
+  color: white;
+}
+
+.login-page .login-page__form form .login-btn {
+  width: 70%;
+  font-size: 1.75rem;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: all 200ms;
+}
+
+.login-page .login-page__form form .login-btn:hover {
+  background-color: black;
+  color: #d8dee9;
+}
+
+.login-page .login-page__form form .errorMessage {
+  margin-top: -20px;
+  margin-bottom: 30px;
+  color: red;
+}
