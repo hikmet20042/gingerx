@@ -56,7 +56,7 @@ export default function NavBar() {
               Profile
             </Link>
           ) : (
-            !window.location.href === "https://gingerx.netlify.app/login" && (
+            !window.location.href === "https://gingerx.netlify.app/login/" && (
               <Link className="nav-item" to="/login">
                 Log in
               </Link>
