@@ -2,7 +2,6 @@ import React from "react";
 import Contact from "../components/Contact";
 import Discover from "../components/Discover";
 import Subcription from "../components/Subcription";
-import NavBar from "../components/utils/NavBar";
 import WeeklyDeals from "../components/WeeklyDeals";
 import Welcome from "../components/Welcome";
 
