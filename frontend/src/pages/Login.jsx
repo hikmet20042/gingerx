@@ -7,7 +7,7 @@ const Login = () => {
   function handleSubmit(e) {
     e.preventDefault();
 
-    fetch("http://localhost:5000/api/auth/login", {
+    fetch("http://165.227.137.113:5000/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -21,7 +21,7 @@ const Login = () => {
       .then((data) => {
         if (data.success) {
           document.cookie = `jwtToken=${data.access_token}`;
-          window.location.replace("http://localhost:3000");
+          window.location.replace("https://gingerx.netlify.app/");
         } else {
           setIsCredentialsTrue(false);
           setTimeout(() => {

@@ -33,7 +33,7 @@ export default function NavBar() {
 
       <div class="navigations">
         <div className="navigation">
-          {!window.location == "http://localhost:3000/" && (
+          {!window.location == "https://gingerx.netlify.app/" && (
             <Link className="nav-item" to="/">
               Home
             </Link>
@@ -56,7 +56,7 @@ export default function NavBar() {
               Profile
             </Link>
           ) : (
-            !window.location == "http://localhost:3000/login" && (
+            !window.location == "https://gingerx.netlify.app/login" && (
               <Link className="nav-item" to="/login">
                 Log in
               </Link>
